@@ -2,55 +2,27 @@
 [
     {
         "key": "ctrl+shift+d",
-        "command": "editor.action.duplicateSelection"
-    },
-    {
-        "key": "ctrl+shift+down",
-        "command": "editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "alt+down",
-        "command": "-editor.action.moveLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+up",
-        "command": "editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "alt+up",
-        "command": "-editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+shift+up",
-        "command": "-editor.action.insertCursorAbove",
+        "command": "editor.action.duplicateSelection",
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+down",
-        "command": "-editor.action.insertCursorBelow",
-        "when": "editorTextFocus"
+        "key": "ctrl+end",
+        "command": "filebunny.goToBottomActiveFile",
+        "when": "editorFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+shift+o",
-        "command": "workbench.action.files.openFolder",
-        "when": "openFolderWorkspaceSupport"
+        "key": "end",
+        "command": "-filebunny.goToBottomActiveFile",
+        "when": "editorFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+k ctrl+o",
-        "command": "-workbench.action.files.openFolder",
-        "when": "openFolderWorkspaceSupport"
+        "key": "ctrl+home",
+        "command": "filebunny.goToTopActiveFile",
+        "when": "editorFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+alt+s",
-        "command": "workbench.action.files.saveFiles"
-    },
-    {
-        "key": "ctrl+shift+`",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus"
+        "key": "home",
+        "command": "-filebunny.goToTopActiveFile",
+        "when": "editorFocus && !editorReadonly"
     }
 ]

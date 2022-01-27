@@ -74,3 +74,10 @@ export PATH
 unset -f append_path
 
 export QT_QPA_PLATFORMTHEME=qt5ct
+
+export MYSQL_DATABASE="diparaf"
+export MYSQL_ADDRESS="127.0.0.1:3360"
+export MYSQL_USER="user"
+export MYSQL_PASSWORD="user"
+
+export ENVIRONMENT="development"

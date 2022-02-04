@@ -7,7 +7,7 @@
             [
                 "anakinls"
             ],
-            "enabled": false,
+            "enabled": true,
             "scopes":
             [
                 "source.python"
@@ -100,15 +100,10 @@
                     "useany": true
                 },
                 "gofumpt": true,
-                "hoverKind": "SynopsisDocumentation",
-                "matcher": "CaseInsensitive",
                 "semanticTokens": true,
                 "usePlaceholders": true
             },
-            "scopes":
-            [
-                "source.go"
-            ]
+            "selector": "source.go"
         },
         "phpactor":
         {
@@ -117,11 +112,16 @@
                 "phpactor",
                 "language-server"
             ],
-            "enabled": false,
+            "enabled": true,
+            "languageId": "php",
             "scopes":
             [
                 "source.php",
                 "embedding.php"
+            ],
+            "syntaxes":
+            [
+                "Packages/PHP/PHP.sublime-syntax"
             ]
         }
     },

@@ -1,5 +1,4 @@
 {
-    "debug.console.fontSize": 12,
     "editor.accessibilitySupport": "off",
     "editor.codeActionsOnSave": {
         "source.organizeImports": true
@@ -7,8 +6,9 @@
     "editor.codeLens": false,
     "editor.comments.insertSpace": false,
     "editor.copyWithSyntaxHighlighting": false,
+    "editor.fontLigatures": true,
     "editor.dragAndDrop": false,
-    "editor.fontFamily": "mononoki",
+    "editor.fontFamily": "JetBrains Mono Light",
     "editor.fontSize": 12,
     "editor.formatOnSave": true,
     "editor.links": false,
@@ -74,9 +74,7 @@
     "terminal.external.linuxExec": "roxterm",
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.customGlyphs": false,
-    "terminal.integrated.fontFamily": "mononoki",
     "terminal.integrated.fontSize": 12,
-    "terminal.integrated.lineHeight": 1.2,
     "workbench.editor.enablePreview": false,
     "workbench.startupEditor": "none",
     "workbench.welcomePage.walkthroughs.openOnInstall": false,
@@ -85,5 +83,8 @@
     "editor.suggest.showSnippets": false,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.snippetSuggestions": "none",
-    "editor.autoIndent": "none"
+    "editor.autoIndent": "advanced",
+    "workbench.colorTheme": "Monokai Dimmed",
+    "editor.occurrencesHighlight": false,
+    "editor.selectionHighlight": false
 }

@@ -27,11 +27,13 @@ export CC='gcc'
 export CXX='g++'
 export CFLAGS='-s -Os -flto -pipe -fno-plt -march=native -mtune=native'
 
+export ENVIRONMENT="development"
+
 # export GO111MODULE=""
 # export GOARCH="amd64"
 export GOBIN="$PREFIX/lib/go/bin"
-export GOCACHE="$HOME/go/cache/go-build"
-# export GOENV="$HOME/.config/go/env"
+export GOCACHE="$HOME/go/cache"
+# export GOENV=""
 # export GOEXE=""
 # export GOEXPERIMENT=""
 # export GOFLAGS=""
@@ -50,10 +52,10 @@ export GOROOT="$PREFIX/lib/go"
 # export GOTMPDIR=""
 export GOTOOLDIR="$PREFIX/lib/go/pkg/tool/linux_amd64"
 # export GOVCS=""
-# export GOVERSION=""
+# export GOVERSION="go1.18beta2"
 # export GCCGO="gccgo"
 # export GOAMD64="v1"
-export CGO_ENABLED="1"
+# export CGO_ENABLED="1"
 # export GOMOD=""
 # export GOWORK=""
 export CGO_CFLAGS="-g -Os"
@@ -62,13 +64,12 @@ export CGO_CXXFLAGS="-g -Os"
 export CGO_FFLAGS="-g -Os"
 export CGO_LDFLAGS="-g -Os"
 export PKG_CONFIG="pkg-config"
-export GOGCCFLAGS="-fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build4053433636=/tmp/go-build -gno-record-gcc-switches"
+export GOGCCFLAGS="-fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build2529965917=/tmp/go-build -gno-record-gcc-switches"
 
-export DARTBIN="$PREFIX/lib/dart/bin"
 
 append_path $PREFIX/bin
 append_path $GOBIN
-append_path $DARTBIN
+append_path "$PREFIX/lib/sciter-js/bin/linux/x64"
 export PATH
 
 unset -f append_path
@@ -79,5 +80,3 @@ export MYSQL_DATABASE="diparaf"
 export MYSQL_ADDRESS="127.0.0.1:3360"
 export MYSQL_USER="user"
 export MYSQL_PASSWORD="user"
-
-export ENVIRONMENT="development"

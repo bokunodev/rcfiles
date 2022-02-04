@@ -1,9 +1,5 @@
 [
     {
-        "args":
-        {
-            "side_by_side": false
-        },
         "command": "lsp_symbol_definition",
         "context":
         [
@@ -14,7 +10,6 @@
             },
             {
                 "key": "auto_complete_visible",
-                "operand": false,
                 "operator": "equal"
             }
         ],
@@ -35,7 +30,7 @@
         ],
         "keys":
         [
-            "alt+q"
+            "ctrl+."
         ]
     },
     {
@@ -63,9 +58,6 @@
                 "operator": "equal"
             }
         ],
-        "keys":
-        [
-            "f1"
-        ]
+        "keys":["ctrl+k", "ctrl+i"]
     }
 ]

@@ -26,6 +26,7 @@ export AR='ar'
 export CC='gcc'
 export CXX='g++'
 export CFLAGS='-s -Os -flto -pipe -fno-plt -march=native -mtune=native'
+export CXXFLAGS="$CFLAGS"
 
 export ENVIRONMENT="development"
 

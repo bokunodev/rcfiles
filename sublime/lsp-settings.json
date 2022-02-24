@@ -7,11 +7,8 @@
             [
                 "anakinls"
             ],
-            "enabled": true,
-            "scopes":
-            [
-                "source.python"
-            ]
+            "enabled": false,
+            "selector": "source.python"
         },
         "clangd":
         {
@@ -25,11 +22,7 @@
                 "--header-insertion=never"
             ],
             "enabled": true,
-            "scopes":
-            [
-                "source.c",
-                "source.c++"
-            ]
+            "selector": "source.c"
         },
         "dart":
         {
@@ -39,10 +32,7 @@
                 "language-server"
             ],
             "enabled": false,
-            "scopes":
-            [
-                "source.dart"
-            ]
+            "selector": "source.dart"
         },
         "gopls":
         {
@@ -132,6 +122,6 @@
         "source.organizeImports": true
     },
     "lsp_format_on_save": true,
-    "only_show_lsp_completions": true,
+    "only_show_lsp_completions": false,
     "show_diagnostics_panel_on_save": 4
 }

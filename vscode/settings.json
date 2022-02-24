@@ -71,7 +71,6 @@
         "usePlaceholders": true
     },
     "security.workspace.trust.enabled": false,
-    "terminal.external.linuxExec": "roxterm",
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.customGlyphs": false,
     "terminal.integrated.fontSize": 12,
@@ -84,7 +83,31 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.snippetSuggestions": "none",
     "editor.autoIndent": "advanced",
-    "workbench.colorTheme": "Monokai Dimmed",
     "editor.occurrencesHighlight": false,
-    "editor.selectionHighlight": false
+    "editor.selectionHighlight": false,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "[go]": {
+        "files.trimTrailingWhitespace": false,
+        "files.trimFinalNewlines": false,
+    },
+    "intelephense.diagnostics.run": "onSave",
+    "intelephense.environment.phpVersion": "7.4.27",
+    "intelephense.format.enable": false,
+    "explorer.autoReveal": false,
+    "simple-php-cs-fixer.config": ".php-cs-fixer.php",
+    "simple-php-cs-fixer.save": true,
+    "simple-php-cs-fixer.useConfig": true,
+    "simple-php-cs-fixer.usingCache": true,
+    "clangd.fallbackFlags": [
+        "-std=c11"
+    ],
+    "workbench.colorTheme": "semantic-rainbow",
+    "workbench.iconTheme": "vs-minimal",
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "html.format.endWithNewline": true,
+    "php-cs-fixer.autoFixBySemicolon": true,
+    "php-cs-fixer.formatHtml": true,
+    "php-cs-fixer.lastDownload": 0,
+    "php-cs-fixer.onsave": true,
 }

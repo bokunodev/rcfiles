@@ -24,5 +24,14 @@
         "key": "home",
         "command": "-filebunny.goToTopActiveFile",
         "when": "editorFocus && !editorReadonly"
-    }
+    },
+    {
+        "key": "ctrl+shift+right",
+        "command": "-workbench.action.terminal.resizePaneRight",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "shift+alt+,",
+        "command": "editor.emmet.action.matchTag"
+    },
 ]

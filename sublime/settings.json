@@ -64,8 +64,9 @@
     ],
     "indent_guide_options":
     [
+        "solid",
+        "draw_normal",
         "draw_active_single",
-        "solid"
     ],
     "light_theme": "Adaptive.sublime-theme",
     "line_padding_bottom": 0,

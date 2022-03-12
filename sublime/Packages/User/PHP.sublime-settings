@@ -1,0 +1,10 @@
+{
+    "command_on_save":
+    [
+        "php-cs-fixer",
+        "fix",
+        "--using-cache=no",
+        "--config=${folder}/.php-cs-fixer.php",
+        "${file_path}/${file_name}"
+    ],
+}

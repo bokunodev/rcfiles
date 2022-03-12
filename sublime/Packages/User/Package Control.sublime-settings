@@ -1,0 +1,25 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Acme Color Scheme",
+		"ApacheConf",
+		"Case Conversion",
+		"Color Convert",
+		"Color Highlight",
+		"DotENV",
+		"EditorConfig",
+		"Emmet",
+		"FileManager",
+		"LSP",
+		"MoveTab",
+		"Package Control",
+		"Pretty JSON",
+		"Swap Selections",
+		"Terminal",
+		"VAlign",
+	],
+}

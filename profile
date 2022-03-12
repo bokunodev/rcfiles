@@ -20,8 +20,6 @@ append_path () {
 export EDITOR=nano
 export PREFIX="$HOME/.local"
 
-export GPGKEY=3113C8B3D2B68E9B
-
 export AR='ar'
 export CC='gcc'
 export CXX='g++'
@@ -75,10 +73,5 @@ export PATH
 unset -f append_path
 
 export QT_QPA_PLATFORMTHEME=qt5ct
-
-export MYSQL_DATABASE='diparaf'
-export MYSQL_ADDRESS='[::1]:3360'
-export MYSQL_USER='user'
-export MYSQL_PASSWORD='user'
 
 export ENVIRONMENT='development'

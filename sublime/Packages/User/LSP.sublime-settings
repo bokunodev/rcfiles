@@ -1,0 +1,127 @@
+{
+    "clients":
+    {
+        "anakinls":
+        {
+            "command":
+            [
+                "anakinls"
+            ],
+            "enabled": false,
+            "selector": "source.python"
+        },
+        "clangd":
+        {
+            "command":
+            [
+                "clangd",
+                "-j=1",
+                "--malloc-trim",
+                "--pch-storage=disk",
+                "--background-index",
+                "--header-insertion=never"
+            ],
+            "enabled": true,
+            "selector": "source.c"
+        },
+        "dart":
+        {
+            "command":
+            [
+                "dart",
+                "language-server"
+            ],
+            "enabled": false,
+            "selector": "source.dart"
+        },
+        "gopls":
+        {
+            "command":
+            [
+                "gopls"
+            ],
+            "enabled": true,
+            "initializationOptions":
+            {
+                "analyses":
+                {
+                    "asmdecl": false,
+                    "assign": true,
+                    "atomic": true,
+                    "atomicalign": true,
+                    "bools": true,
+                    "buildtag": true,
+                    "cgocall": true,
+                    "composites": true,
+                    "copylocks": true,
+                    "deepequalerrors": false,
+                    "errorsas": true,
+                    "fieldalignment": true,
+                    "fillreturns": true,
+                    "fillstruct": true,
+                    "httpresponse": true,
+                    "ifaceassert": true,
+                    "infertypeargs": true,
+                    "loopclosure": true,
+                    "lostcancel": true,
+                    "nilfunc": true,
+                    "nilness": true,
+                    "nonewvars": true,
+                    "noresultvalues": true,
+                    "printf": true,
+                    "shadow": true,
+                    "shift": true,
+                    "simplifycompositelit": true,
+                    "simplifyrange": true,
+                    "simplifyslice": true,
+                    "sortslice": true,
+                    "stdmethods": true,
+                    "stringintconv": true,
+                    "structtag": true,
+                    "testinggoroutine": true,
+                    "tests": true,
+                    "undeclaredname": true,
+                    "unmarshal": true,
+                    "unreachable": true,
+                    "unsafeptr": true,
+                    "unusedparams": true,
+                    "unusedresult": true,
+                    "unusedwrite": true,
+                    "useany": true
+                },
+                "gofumpt": true,
+                "semanticTokens": true,
+                "usePlaceholders": true
+            },
+            "selector": "source.go"
+        },
+        "phpactor":
+        {
+            "command":
+            [
+                "phpactor",
+                "language-server"
+            ],
+            "enabled": true,
+            "languageId": "php",
+            "scopes":
+            [
+                "source.php",
+                "embedding.php"
+            ],
+            "syntaxes":
+            [
+                "Packages/PHP/PHP.sublime-syntax"
+            ]
+        }
+    },
+    "diagnostics_delay_ms": 50,
+    "document_highlight_style": "fill",
+    "lsp_code_actions_on_save":
+    {
+        "source.organizeImports": true
+    },
+    "lsp_format_on_save": true,
+    "only_show_lsp_completions": false,
+    "show_diagnostics_panel_on_save": 4
+}

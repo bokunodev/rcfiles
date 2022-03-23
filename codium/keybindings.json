@@ -6,26 +6,6 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+end",
-        "command": "filebunny.goToBottomActiveFile",
-        "when": "editorFocus && !editorReadonly"
-    },
-    {
-        "key": "end",
-        "command": "-filebunny.goToBottomActiveFile",
-        "when": "editorFocus && !editorReadonly"
-    },
-    {
-        "key": "ctrl+home",
-        "command": "filebunny.goToTopActiveFile",
-        "when": "editorFocus && !editorReadonly"
-    },
-    {
-        "key": "home",
-        "command": "-filebunny.goToTopActiveFile",
-        "when": "editorFocus && !editorReadonly"
-    },
-    {
         "key": "ctrl+shift+right",
         "command": "-workbench.action.terminal.resizePaneRight",
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
@@ -43,5 +23,5 @@
         "key": "ctrl+shift+a",
         "command": "-editor.action.blockComment",
         "when": "editorTextFocus && !editorReadonly"
-    }
+    },
 ]

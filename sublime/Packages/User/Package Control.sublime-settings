@@ -5,7 +5,6 @@
 	],
 	"installed_packages":
 	[
-		"Acme Color Scheme",
 		"ApacheConf",
 		"Case Conversion",
 		"Color Convert",
@@ -18,6 +17,7 @@
 		"MoveTab",
 		"Package Control",
 		"Pretty JSON",
+		"Svelte",
 		"Swap Selections",
 		"Terminal",
 		"VAlign",

@@ -103,16 +103,207 @@
                 "language-server"
             ],
             "enabled": true,
-            "languageId": "php",
-            "scopes":
+            "languages":
             [
-                "source.php",
-                "embedding.php"
-            ],
-            "syntaxes":
-            [
-                "Packages/PHP/PHP.sublime-syntax"
+                {
+                    "languageId": "php",
+                    "scopes":
+                    [
+                        "source.php",
+                        "embedding.php"
+                    ],
+                    "syntaxes":
+                    [
+                        "Packages/PHP/PHP.sublime-syntax"
+                    ]
+                }
             ]
+        },
+        "svelteserver":
+        {
+            "command":
+            [
+                "svelteserver",
+                "--stdio"
+            ],
+            "disabled_capabilities":
+            {},
+            "enabled": true,
+            "initializationOptions":
+            {
+                "configuration":
+                {
+                    "svelte":
+                    {
+                        "plugin":
+                        {
+                            "css":
+                            {
+                                "enable": true,
+                                "globals": "",
+                                "colorPresentations":
+                                {
+                                    "enable": true
+                                },
+                                "completions":
+                                {
+                                    "emmet": true,
+                                    "enable": true
+                                },
+                                "diagnostics":
+                                {
+                                    "enable": true
+                                },
+                                "documentColors":
+                                {
+                                    "enable": true
+                                },
+                                "documentSymbols":
+                                {
+                                    "enable": true
+                                },
+                                "hover":
+                                {
+                                    "enable": true
+                                },
+                                "selectionRange":
+                                {
+                                    "enable": true
+                                }
+                            },
+                            "html":
+                            {
+                                "enable": true,
+                                "completions":
+                                {
+                                    "emmet": true,
+                                    "enable": true
+                                },
+                                "documentSymbols":
+                                {
+                                    "enable": true
+                                },
+                                "hover":
+                                {
+                                    "enable": true
+                                },
+                                "linkedEditing":
+                                {
+                                    "enable": true
+                                },
+                                "renameTags":
+                                {
+                                    "enable": true
+                                },
+                                "tagComplete":
+                                {
+                                    "enable": true
+                                }
+                            },
+                            "svelte":
+                            {
+                                "compilerWarnings":
+                                {},
+                                "useNewTransformation": false,
+                                "codeActions":
+                                {
+                                    "enable": true
+                                },
+                                "completions":
+                                {
+                                    "enable": true
+                                },
+                                "diagnostics":
+                                {
+                                    "enable": true
+                                },
+                                "enable": true,
+                                "format":
+                                {
+                                    "enable": true
+                                },
+                                "hover":
+                                {
+                                    "enable": true
+                                },
+                                "rename":
+                                {
+                                    "enable": true
+                                },
+                                "selectionRange":
+                                {
+                                    "enable": true
+                                },
+                            },
+                            "typescript":
+                            {
+                                "enable": true,
+                                "codeActions":
+                                {
+                                    "enable": true
+                                },
+                                "completions":
+                                {
+                                    "enable": true
+                                },
+                                "definitions":
+                                {
+                                    "enable": true
+                                },
+                                "diagnostics":
+                                {
+                                    "enable": true
+                                },
+                                "documentSymbols":
+                                {
+                                    "enable": true
+                                },
+                                "findReferences":
+                                {
+                                    "enable": true
+                                },
+                                "hover":
+                                {
+                                    "enable": true
+                                },
+                                "rename":
+                                {
+                                    "enable": true
+                                },
+                                "selectionRange":
+                                {
+                                    "enable": true
+                                },
+                                "semanticTokens":
+                                {
+                                    "enable": false
+                                },
+                                "signatureHelp":
+                                {
+                                    "enable": true
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "languages":
+            [
+                {
+                    "languageId": "svelte",
+                    "scopes":
+                    [
+                        "text.html.svelte"
+                    ],
+                    "syntaxes":
+                    [
+                        "Packages/Svelte/Svelte.sublime-syntax"
+                    ]
+                }
+            ],
+            "selector": "text.html.svelte",
+            "settings":
+            {}
         }
     },
     "diagnostics_delay_ms": 50,

@@ -37,6 +37,7 @@ export GOBIN="$GOROOT/bin"
 export GOTOOLDIR="$GOROOT/pkg/tool/linux_amd64"
 
 append_path $PREFIX/bin
+append_path $HOME/.deno/bin
 append_path $GOBIN
 export PATH
 

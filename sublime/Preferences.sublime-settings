@@ -50,7 +50,7 @@
         "venv",
         ".venv",
         ".pytest_cache",
-        "vendor",
+        // "vendor",
         "node_modules"
     ],
     "font_face": "JetBrains Mono Light",
@@ -82,4 +82,5 @@
     "word_wrap": false,
     "trim_trailing_white_space_on_save": "all",
     "update_check": false,
+    /*"font_size": 10,*/
 }

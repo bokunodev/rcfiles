@@ -89,7 +89,7 @@
         "files.trimFinalNewlines": false,
     },
     "intelephense.diagnostics.run": "onSave",
-    "intelephense.environment.phpVersion": "7.4.28",
+    "intelephense.environment.phpVersion": "8.1.4",
     "intelephense.format.enable": false,
     "explorer.autoReveal": false,
     "clangd.fallbackFlags": [
@@ -102,12 +102,15 @@
     "php-cs-fixer.onsave": true,
     "php.validate.executablePath": "/usr/bin/php",
     "php-cs-fixer.allowRisky": true,
-    "php-cs-fixer.executablePath": "/home/boku/.local/bin/php-cs-fixer",
+    "php-cs-fixer.executablePath": "php-cs-fixer",
     "workbench.tree.expandMode": "doubleClick",
-    "svelte.ask-to-enable-ts-plugin": false,
     "editor.multiCursorModifier": "ctrlCmd",
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "workbench.colorTheme": "semantic-rainbow",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "svelte.plugin.svelte.format.config.singleQuote": true,
+    "svelte.plugin.svelte.format.config.svelteStrictMode": true,
+    "svelte.enable-ts-plugin": true,
+    "php.suggest.basic": false,
+    "intelephense.phpdoc.returnVoid": false,
+    "intelephense.phpdoc.textFormat": "text",
+    "html.format.templating": true,
 }

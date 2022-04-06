@@ -28,14 +28,13 @@ function __setup_myprompt() {
 	local   white="\[\033[1;37m\]"
 	local     end="\[\033[0m\]"
 
-	local is_root="${cyan}λ"
+	local is_root="${yellow}\\\$"
 
 	if [[ $EUID -eq 0 ]]; then
-		is_root="${red}δ"
+		is_root="${red}#"
 	fi
 
-	local prompt="[${blue}\d${end}]-[${green}\t${end}]-[${magenta}\w${end}]\n"
-	prompt="${prompt}\u${yellow}@${end}\H ${is_root} ${end}"
+	local prompt="${blue}\D{%c} ${green}\w\n${magenta}\u@\H ${is_root}${end} "
 	echo "${prompt}"
 }
 

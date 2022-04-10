@@ -22,7 +22,11 @@
                 "--header-insertion=never"
             ],
             "enabled": true,
-            "selector": "source.c"
+            "scopes":
+            [
+                "source.c",
+                "source.c++",
+            ]
         },
         "dart":
         {
@@ -95,29 +99,15 @@
             },
             "selector": "source.go"
         },
-        "phpactor":
+        "php-language-server":
         {
             "command":
             [
-                "phpactor",
-                "language-server"
+                "php",
+                "/home/boku/Public/php-sandbox/php-language-server/bin/php-language-server.php"
             ],
             "enabled": true,
-            "languages":
-            [
-                {
-                    "languageId": "php",
-                    "scopes":
-                    [
-                        "source.php",
-                        "embedding.php"
-                    ],
-                    "syntaxes":
-                    [
-                        "Packages/PHP/PHP.sublime-syntax"
-                    ]
-                }
-            ]
+            "selector": "source.php|embedding.php",
         },
         "svelteserver":
         {

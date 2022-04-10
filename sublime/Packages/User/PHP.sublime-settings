@@ -7,4 +7,21 @@
         "--config=${folder}/.php-cs-fixer.php",
         "${file_path}/${file_name}"
     ],
+    "folder_exclude_patterns":
+    [
+        ".svn",
+        ".git",
+        ".hg",
+        "CVS",
+        "Trash",
+        ".Trash-*",
+        "zig-cache",
+        "zig-out",
+        "__pycache__",
+        "venv",
+        ".venv",
+        ".pytest_cache",
+        "vendor",
+        "node_modules"
+    ],
 }

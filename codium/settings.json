@@ -105,7 +105,7 @@
     "php-cs-fixer.executablePath": "php-cs-fixer",
     "workbench.tree.expandMode": "doubleClick",
     "editor.multiCursorModifier": "ctrlCmd",
-    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.colorTheme": "Gruvbox Light Hard",
     "svelte.plugin.svelte.format.config.singleQuote": true,
     "svelte.plugin.svelte.format.config.svelteStrictMode": true,
     "svelte.enable-ts-plugin": true,

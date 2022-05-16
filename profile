@@ -1,53 +1,26 @@
-#!/usr/bin/bash
+#
+# ~/.bash_profile
+#
 
-# if running bash
-if [ -n "$BASH_VERSION" ]; then
-    # include .bashrc if it exists
-    if [ -f "$HOME/.bashrc" ]; then
-		. "$HOME/.bashrc"
-    fi
-fi
-
-append_path () {
-    case ":$PATH:" in
-        *:"$1":*)
-            ;;
-        *)
-            PATH="${PATH:+$PATH:}$1"
-    esac
-}
-
-export EDITOR=nano
-export PREFIX="$HOME/.local"
-
-export GPGKEY=3113C8B3D2B68E9B
-
-export AR=ar
-export CC=gcc
-export CXX=g++
-export CFLAGS='-s -O2 -flto -pipe -fno-plt -march=native -mtune=native'
-export CXXFLAGS="$CFLAGS"
-
-export GOPATH="$HOME/go"
-export GOCACHE="$GOPATH/cache"
-export GOMODCACHE="$GOPATH/pkg/mod"
-
-export GOROOT="$PREFIX/go"
-export GOBIN="$GOROOT/bin"
-export GOTOOLDIR="$GOROOT/pkg/tool/linux_amd64"
-
-append_path $PREFIX/bin
-append_path $HOME/.deno/bin
-append_path $GOBIN
-export PATH
-
-unset -f append_path
+[[ -f ~/.bashrc ]] && . ~/.bashrc
 
 export QT_QPA_PLATFORMTHEME=qt5ct
 
-export MYSQL_DATABASE=diparaf
-export MYSQL_ADDRESS=[::1]:3360
-export MYSQL_USER=user
-export MYSQL_PASSWORD=user
+export CFLAGS="-s -flto -fno-plt -mtune=native -march=native -O2"
 
-export ENVIRONMENT=development
+export GOBIN="$HOME/.local/go/bin"
+export GOCACHE="$HOME/go/cache"
+export GOMODCACHE="$HOME/go/pkg/mod"
+export GOPATH="$HOME/go"
+export GOROOT="$HOME/.local/go"
+export CGO_ENABLED="1"
+
+export PNPM_HOME="$HOME/.local/share/pnpm"
+
+export PREFIX="$HOME/.local"
+
+PATH="$PATH:$GOBIN"
+PATH="$PATH:$PREFIX/bin"
+PATH="$PATH:$PNPM_HOME"
+
+export PATH

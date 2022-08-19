@@ -1,0 +1,7 @@
+alias ls='ls --color=auto --group-directories-first -hpq'
+alias la='ls -A'
+alias ll='ls -l'
+alias ..='cd ..'
+alias Y='yes Y'
+alias grep='grep --color=auto'
+alias diff='diff --color=auto'

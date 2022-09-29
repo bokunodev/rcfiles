@@ -1,9 +1,9 @@
 export EDITOR=nano
 export QT_QPA_PLATFORMTHEME=qt5ct
 
-export CC=/usr/local/bin/gcc
-export CXX=/usr/local/bin/g++
-export CFLAGS="-s -fno-plt -flto=auto -march=native -O2"
+export CC=/usr/bin/clang
+export CXX=/usr/bin/clang++
+export CFLAGS="-s -fno-plt -flto=auto -march=native -Os"
 export CXXFLAGS="$CFLAGS"
 
 export GOPATH="$HOME/go"
@@ -20,3 +20,5 @@ PATH="$PATH:$GOBIN"
 PATH="$PATH:$PREFIX/bin"
 
 export PATH
+
+. "$HOME/.cargo/env"

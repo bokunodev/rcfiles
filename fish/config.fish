@@ -3,26 +3,27 @@ if status is-interactive
     set fish_greeting
 end
 
-set -x EDITOR nano
-set -x QT_QPA_PLATFORMTHEME qt5ct
+set -gx EDITOR               nano
+set -gx QT_QPA_PLATFORMTHEME qt5ct
 
-set -x CC       /usr/local/bin/gcc
-set -x CXX      /usr/local/bin/g++
-set -x CFLAGS   "-s -fno-plt -flto=auto -march=native -O2"
-set -x CXXFLAGS "$CFLAGS"
+set -gx CC       /usr/bin/clang
+set -gx CXX      /usr/bin/clang++
+set -gx CFLAGS   "-s -fno-plt -flto=auto -march=native -Os"
+set -gx CXXFLAGS "$CFLAGS"
 
-set -x GOPATH      "$HOME/go"
-set -x GOROOT      "$HOME/.local/go"
-set -x GOBIN       "$GOPATH/bin"
-set -x GOCACHE     "$GOPATH/cache"
-set -x GOMODCACHE  "$GOPATH/pkg/mod"
-set -x GOPROXY     "https://proxy.golang.org,https://index.golang.org,direct"
-set -x CGO_ENABLED 1
+set -gx GOPATH      "$HOME/go"
+set -gx GOROOT      "$HOME/.local/go"
+set -gx GOBIN       "$GOPATH/bin"
+set -gx GOCACHE     "$GOPATH/cache"
+set -gx GOMODCACHE  "$GOPATH/pkg/mod"
+set -gx GOPROXY     "https://proxy.golang.org,https://index.golang.org,direct"
+set -gx CGO_ENABLED 1
 
-set -x PREFIX "$HOME/.local"
+set -gx PREFIX "$HOME/.local"
 
 fish_add_path $GOBIN
 fish_add_path $PREFIX/bin
+fish_add_path $HOME/.cargo/bin
 
 # pnpm
 set -gx PNPM_HOME "/home/boku/.local/share/pnpm"

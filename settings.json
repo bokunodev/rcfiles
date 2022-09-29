@@ -86,14 +86,14 @@
         "ui.semanticTokens": true,
         "ui.completion.usePlaceholders": true,
         "ui.completion.experimentalPostfixCompletions": true,
-        //"build.expandWorkspaceToModule": true,
-        //"build.experimentalWorkspaceModule": true,
-        //"ui.diagnostic.experimentalWatchedFileDelay": "5s",
         "ui.completion.matcher": "Fuzzy",
     },
     "[go]": {
         "files.trimTrailingWhitespace": false,
         "files.trimFinalNewlines": false,
+    },
+    "[fish]": {
+        "editor.formatOnSave": false,
     },
     "go.testFlags": [
         "-count",
@@ -111,42 +111,31 @@
     "workbench.startupEditor": "none",
     "workbench.welcomePage.walkthroughs.openOnInstall": false,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "[mongodb]": {
+        "editor.quickSuggestions": {
+            "other": "on",
+            "comments": "off",
+            "strings": "on"
+        },
+    },
     "editor.autoIndent": "advanced",
     "editor.occurrencesHighlight": false,
     "editor.selectionHighlight": false,
-    "blade.format.enable": true,
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
-    "intelephense.diagnostics.run": "onSave",
-    "intelephense.environment.phpVersion": "8.1.4",
-    "intelephense.format.enable": false,
     "explorer.autoReveal": false,
-    "clangd.fallbackFlags": [
-        "-std=c11"
-    ],
     "editor.formatOnSaveMode": "modificationsIfAvailable",
     "html.format.endWithNewline": true,
-    "php-cs-fixer.formatHtml": true,
-    "php-cs-fixer.lastDownload": 0,
-    "php-cs-fixer.onsave": true,
-    "php.validate.executablePath": "/usr/bin/php",
-    "php-cs-fixer.allowRisky": true,
-    "php-cs-fixer.executablePath": "php-cs-fixer",
     "workbench.tree.expandMode": "doubleClick",
     "editor.multiCursorModifier": "ctrlCmd",
     "svelte.plugin.svelte.format.config.singleQuote": true,
     "svelte.plugin.svelte.format.config.svelteStrictMode": true,
     "svelte.enable-ts-plugin": true,
-    "php.suggest.basic": false,
-    "intelephense.phpdoc.returnVoid": false,
-    "intelephense.phpdoc.textFormat": "text",
     "html.format.templating": true,
     "nginx-conf-hint.syntax": "original",
-    "redhat.telemetry.enabled": false,
     "security.workspace.trust.startupPrompt": "never",
     "security.workspace.trust.untrustedFiles": "open",
     "typescript.workspaceSymbols.scope": "currentProject",
-    "workbench.colorTheme": "Gruvbox Dark Hard",
     "editor.suggestSelection": "recentlyUsedByPrefix",
     "editor.guides.bracketPairs": "active",
     "editor.bracketPairColorization.enabled": false,
@@ -170,7 +159,7 @@
             "italic": false
         },
         {
-            "tag": "//",
+            "tag": "////",
             "color": "#474747",
             "strikethrough": true,
             "underline": false,
@@ -250,5 +239,8 @@
             "bold": false,
             "italic": false
         }
-    ]
+    ],
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "python.formatting.provider": "yapf",
+    "rust-analyzer.cargo.target": "x86_64-unknown-linux-gnu",
 }

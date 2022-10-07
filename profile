@@ -1,54 +1,24 @@
-# /etc/profile
+export EDITOR="nano"
+export QT_QPA_PLATFORMTHEME="qt5ct"
 
-# Set our umask
-umask 022
+export CC="/usr/bin/clang"
+export CXX="/usr/bin/clang++"
+export CFLAGS="-s -fno-plt -flto=auto -march=native -Os"
+export CXXFLAGS="$CFLAGS"
 
-# Append "$1" to $PATH when not already in.
-# This function API is accessible to scripts in /etc/profile.d
-append_path () {
-    case ":$PATH:" in
-        *:"$1":*)
-            ;;
-        *)
-            PATH="${PATH:+$PATH:}$1"
-    esac
-}
+export GOROOT="/usr/local/go"
+export GOPATH="$HOME/go"
+export GOBIN="$GOPATH/bin"
+export GOCACHE="$GOPATH/cache"
+export GOMODCACHE="$GOPATH/pkg/mod"
+export GOPROXY="https://proxy.golang.org,https://index.golang.org,direct"
+export CGO_ENABLED=1
 
-# Append our default paths
-append_path '/usr/local/sbin'
-append_path '/usr/local/bin'
-append_path '/usr/bin'
+export PREFIX "$HOME/.local"
 
-# Force PATH to be environment
+PATH="$PATH:$GOBIN"
+PATH="$PATH:$PREFIX/bin"
+
 export PATH
 
-# Load profiles from /etc/profile.d
-if test -d /etc/profile.d/; then
-    for profile in /etc/profile.d/*.sh; do
-        test -r "$profile" && . "$profile"
-    done
-    unset profile
-fi
-
-# Unload our profile API functions
-unset -f append_path
-
-# Source global bash config, when interactive but not posix or sh mode
-if test "$BASH" &&\
-   test "$PS1" &&\
-   test -z "$POSIXLY_CORRECT" &&\
-   test "${0#-}" != sh &&\
-   test -r /etc/bash/bashrc
-then
-    . /etc/bash/bashrc
-fi
-
-# Termcap is outdated, old, and crusty, kill it.
-unset TERMCAP
-
-# Man is much better than us at figuring this out
-unset MANPATH
-
-if test -r $HOME/.profile ; then
-	source $HOME/.profile
-fi
+. "$HOME/.cargo/env"

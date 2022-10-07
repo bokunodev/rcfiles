@@ -27,12 +27,6 @@
             "-node_modules",
             "-.vscode",
         ],
-        "ui.diagnostic.annotations": {
-            "inline": true,
-            "bounds": true,
-            "nil": true,
-            "escape": true,
-        },
         "build.experimentalPackageCacheKey": true,
         "build.allowModfileModifications": true,
         "ui.diagnostic.analyses": {
@@ -100,8 +94,6 @@
         "1",
     ],
     "go.disableConcurrentTests": true,
-    "go.inlayHints.compositeLiteralFields": true,
-    "go.inlayHints.parameterNames": true,
     "go.inlayHints.rangeVariableTypes": true,
     "security.workspace.trust.enabled": false,
     "terminal.integrated.cursorStyle": "line",
@@ -242,5 +234,6 @@
     ],
     "workbench.colorTheme": "Gruvbox Dark Hard",
     "python.formatting.provider": "yapf",
-    "rust-analyzer.cargo.target": "x86_64-unknown-linux-gnu",
+    "go.inlayHints.compositeLiteralFields": true,
+    "go.inlayHints.parameterNames": true
 }
